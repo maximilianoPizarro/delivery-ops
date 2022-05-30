@@ -1,0 +1,63 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 0,
+    "applicationType": "monolith",
+    "authenticationType": "jwt",
+    "baseName": "deliveryops",
+    "blueprints": [
+      {
+        "name": "generator-jhipster-react-native",
+        "version": "4.2.5"
+      }
+    ],
+    "buildTool": "maven",
+    "cacheProvider": "ehcache",
+    "clientFramework": "react",
+    "clientPackageManager": "npm",
+    "clientTheme": "quartz",
+    "clientThemeVariant": "dark",
+    "creationTimestamp": 1653935728276,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "dtoSuffix": "DTO",
+    "enableGradleEnterprise": false,
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "entities": ["Producto", "ProductoCategoria", "Cliente", "Carrito", "ProductoOrden"],
+    "entitySuffix": "",
+    "gradleEnterpriseHost": "",
+    "jhiPrefix": "jhi",
+    "jhipsterVersion": "7.8.1",
+    "languages": ["en", "nl"],
+    "messageBroker": false,
+    "nativeLanguage": "es",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-react-native",
+        "version": "4.2.5"
+      }
+    ],
+    "packageFolder": "com/deliveryops/app",
+    "packageName": "com.deliveryops.app",
+    "pages": [],
+    "prodDatabaseType": "postgresql",
+    "reactive": false,
+    "searchEngine": false,
+    "serverPort": "8080",
+    "serviceDiscoveryType": false,
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "skipUserManagement": false,
+    "testFrameworks": [],
+    "websocket": false,
+    "withAdminUi": true,
+    "skipClient": false,
+    "skipServer": false,
+    "reactNative": {
+      "reactNativeAppName": "DeliveryOps",
+      "detox": false
+    },
+    "lastLiquibaseTimestamp": 1653936028000
+  }
+}
