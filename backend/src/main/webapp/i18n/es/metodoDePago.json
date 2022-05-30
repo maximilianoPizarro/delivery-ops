@@ -1,0 +1,9 @@
+{
+  "deliveryopsApp": {
+    "MetodoDePago": {
+      "null": "",
+      "EFECTIVO": "efectivo",
+      "CUPON": "cupon"
+    }
+  }
+}

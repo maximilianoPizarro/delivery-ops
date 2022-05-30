@@ -1,0 +1,62 @@
+{
+  "applications": ["deliveryops"],
+  "changelogDate": "20220530182632",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "cliente",
+  "fields": [
+    {
+      "fieldName": "genero",
+      "fieldType": "Genero",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "MASCULINO,FEMENINO,OTRO"
+    },
+    {
+      "fieldName": "telefono",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "direccion1",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "direccion2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ciudad",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "pais",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Cliente",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "cliente",
+      "ownerSide": true,
+      "relationshipName": "user",
+      "relationshipType": "one-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "carrito",
+      "otherEntityRelationshipName": "cliente",
+      "relationshipName": "cart",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

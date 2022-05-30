@@ -1,0 +1,32 @@
+{
+  "applications": ["deliveryops"],
+  "changelogDate": "20220530182532",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "producto_categoria",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ProductoCategoria",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "producto",
+      "otherEntityRelationshipName": "productoCategoria",
+      "relationshipName": "producto",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

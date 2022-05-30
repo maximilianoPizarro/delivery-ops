@@ -1,0 +1,44 @@
+{
+  "applications": ["deliveryops"],
+  "changelogDate": "20220530182832",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "producto_orden",
+  "fields": [
+    {
+      "fieldName": "cantidad",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required", "min"],
+      "fieldValidateRulesMin": "0"
+    },
+    {
+      "fieldName": "precioTotal",
+      "fieldType": "BigDecimal",
+      "fieldValidateRules": ["required", "min"],
+      "fieldValidateRulesMin": "0"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ProductoOrden",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "nombre",
+      "otherEntityName": "producto",
+      "otherEntityRelationshipName": "productoOrden",
+      "relationshipName": "producto",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "carrito",
+      "otherEntityRelationshipName": "orden",
+      "relationshipName": "cart",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceClass"
+}
