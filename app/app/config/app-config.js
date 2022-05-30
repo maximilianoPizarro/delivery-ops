@@ -5,7 +5,7 @@ const extra = Constants.manifest?.extra ?? {};
 
 export default {
   // use 10.0.2.2 for Android to connect to host machine
-  apiUrl: 'https://8080-maximiliano-deliveryops-ykb02fyi4yh.ws-us46.gitpod.io/',
+  apiUrl: 'https://delivery-ops.herokuapp.com/',
   // use fixtures instead of real API requests
   useFixtures: false,
   // debug mode
