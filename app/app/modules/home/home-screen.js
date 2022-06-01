@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import LearnMoreLinks from './learn-more-links.component.js';
 import { Images } from '../../shared/themes';
 import styles from './home-screen.styles';
+import Iframe from 'react-iframe'
 
 function HomeScreen(props) {
   const { account } = props;
@@ -16,6 +17,14 @@ function HomeScreen(props) {
           <Image source={Images.logoJhipster} style={styles.logo} />
           <Text style={styles.welcomeText}>DeliveryOps</Text>
           <Text style={styles.welcomeText}>Welcome to your JHipster React Native app.</Text>
+          <Text style={styles.welcomeText}>Imagine DevOps.</Text>
+          <Iframe url="https://www.youtube.com/embed/iYLxw6OsZug"
+              width="450px"
+              height="450px"
+              id="myId"
+              className="myClassname"
+              display="initial"
+              position="relative"/>
         </View>
         {account && account.login ? (
           <View style={[styles.authContainer, styles.authContainerTrue]} testID="authDisplayTrue">
