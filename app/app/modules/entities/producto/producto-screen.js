@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, Text, TouchableOpacity, View } from 'react-native';
+import { FlatList, Text, TouchableOpacity, View, Image } from 'react-native';
 import { connect } from 'react-redux';
 import { useFocusEffect } from '@react-navigation/native';
 import ProductoActions from './producto.reducer';
@@ -27,6 +27,8 @@ function ProductoScreen(props) {
       <TouchableOpacity onPress={() => props.navigation.navigate('ProductoDetail', { entityId: item.id })}>
         <View style={styles.listRow}>
           <Text style={styles.whiteLabel}>ID: {item.id}</Text>
+          <Text style={styles.label}>{item.description}</Text>
+          <Image testID="image" style={styles.imageBlob} source={{ uri: `data:${producto.imageContentType};base64,${item.image}` }} />
           {/* <Text style={styles.label}>{item.description}</Text> */}
         </View>
       </TouchableOpacity>

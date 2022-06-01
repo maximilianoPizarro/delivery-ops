@@ -1,5 +1,5 @@
 const colors = {
-  jhipsterBlue: '#3E8ACC',
+  jhipsterBlue: '#0B0000',
   transparent: 'rgba(0,0,0,0)',
   error: 'rgba(200, 0, 0, 0.8)',
   white: 'white',

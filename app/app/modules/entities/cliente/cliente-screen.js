@@ -27,6 +27,7 @@ function ClienteScreen(props) {
       <TouchableOpacity onPress={() => props.navigation.navigate('ClienteDetail', { entityId: item.id })}>
         <View style={styles.listRow}>
           <Text style={styles.whiteLabel}>ID: {item.id}</Text>
+          <Text style={styles.label}>{item.description}</Text>
           {/* <Text style={styles.label}>{item.description}</Text> */}
         </View>
       </TouchableOpacity>
