@@ -26,8 +26,7 @@ function CarritoScreen(props) {
     return (
       <TouchableOpacity onPress={() => props.navigation.navigate('CarritoDetail', { entityId: item.id })}>
         <View style={styles.listRow}>
-          <Text style={styles.whiteLabel}>ID: {item.id}</Text>
-          <Text style={styles.label}>{item.description}</Text> 
+          <Text style={styles.whiteLabel}>ID: {item.id} ESTATUS: {item.status} REFERENCIA {item.referencia}</Text>
           {/* <Text style={styles.label}>{item.description}</Text> */}
         </View>
       </TouchableOpacity>

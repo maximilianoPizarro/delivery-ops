@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { ApplicationStyles, Colors } from '../../shared/themes';
+import { Metrics, ApplicationStyles, Colors } from '../../shared/themes';
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
@@ -22,4 +22,10 @@ export default StyleSheet.create({
     alignSelf: 'stretch',
     justifyContent: 'center',
   },
+  logo: {
+    marginTop: Metrics.section,
+    height: Metrics.images.logo,
+    width: Metrics.images.logo,
+    resizeMode: 'contain',
+  },  
 });

@@ -26,8 +26,7 @@ function ProductoScreen(props) {
     return (
       <TouchableOpacity onPress={() => props.navigation.navigate('ProductoDetail', { entityId: item.id })}>
         <View style={styles.listRow}>
-          <Text style={styles.whiteLabel}>ID: {item.id}</Text>
-          <Text style={styles.label}>{item.description}</Text>
+          <Text style={styles.whiteLabel}>{item.description}</Text>
           <Image testID="image" style={styles.imageBlob} source={{ uri: `data:${producto.imageContentType};base64,${item.image}` }} />
           {/* <Text style={styles.label}>{item.description}</Text> */}
         </View>

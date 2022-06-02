@@ -30,6 +30,7 @@ export const entityScreens = [
     route: '',
     component: EntitiesScreen,
     options: {
+      title: 'Business',
       headerLeft: DrawerButton,
     },
   },
@@ -42,7 +43,7 @@ export const entityScreens = [
       headerLeft: () => <HeaderBackButton onPress={() => navigate('Entities')} />,
       headerRight: () => (
         <HeaderBackButton
-          label=" New "
+          label=" Nuevo "
           onPress={() => navigate('ProductoEdit', { id: undefined })}
           backImage={(props) => <Ionicons name="md-add-circle-outline" size={32} color={props.tintColor} />}
         />
@@ -53,14 +54,14 @@ export const entityScreens = [
     name: 'ProductoDetail',
     route: 'producto/detail',
     component: ProductoDetailScreen,
-    options: { title: 'View Producto', headerLeft: () => <HeaderBackButton onPress={() => navigate('Producto')} /> },
+    options: { title: 'Ver Producto', headerLeft: () => <HeaderBackButton onPress={() => navigate('Producto')} /> },
   },
   {
     name: 'ProductoEdit',
     route: 'producto/edit',
     component: ProductoEditScreen,
     options: {
-      title: 'Edit Producto',
+      title: 'Nuevo Producto',
       headerLeft: () => <HeaderBackButton onPress={() => goBackOrIfParamsOrDefault('ProductoDetail', 'Producto')} />,
     },
   },
@@ -69,11 +70,11 @@ export const entityScreens = [
     route: 'producto-categoria',
     component: ProductoCategoriaScreen,
     options: {
-      title: 'ProductoCategorias',
+      title: 'Categorias de Productos',
       headerLeft: () => <HeaderBackButton onPress={() => navigate('Entities')} />,
       headerRight: () => (
         <HeaderBackButton
-          label=" New "
+          label=" Nueva "
           onPress={() => navigate('ProductoCategoriaEdit', { id: undefined })}
           backImage={(props) => <Ionicons name="md-add-circle-outline" size={32} color={props.tintColor} />}
         />
@@ -84,14 +85,14 @@ export const entityScreens = [
     name: 'ProductoCategoriaDetail',
     route: 'producto-categoria/detail',
     component: ProductoCategoriaDetailScreen,
-    options: { title: 'View ProductoCategoria', headerLeft: () => <HeaderBackButton onPress={() => navigate('ProductoCategoria')} /> },
+    options: { title: 'Ver Categoria de Producto', headerLeft: () => <HeaderBackButton onPress={() => navigate('ProductoCategoria')} /> },
   },
   {
     name: 'ProductoCategoriaEdit',
     route: 'producto-categoria/edit',
     component: ProductoCategoriaEditScreen,
     options: {
-      title: 'Edit ProductoCategoria',
+      title: 'Nueva Categoria de Producto',
       headerLeft: () => <HeaderBackButton onPress={() => goBackOrIfParamsOrDefault('ProductoCategoriaDetail', 'ProductoCategoria')} />,
     },
   },
@@ -115,14 +116,14 @@ export const entityScreens = [
     name: 'ClienteDetail',
     route: 'cliente/detail',
     component: ClienteDetailScreen,
-    options: { title: 'View Cliente', headerLeft: () => <HeaderBackButton onPress={() => navigate('Cliente')} /> },
+    options: { title: 'Ver Cliente', headerLeft: () => <HeaderBackButton onPress={() => navigate('Cliente')} /> },
   },
   {
     name: 'ClienteEdit',
     route: 'cliente/edit',
     component: ClienteEditScreen,
     options: {
-      title: 'Edit Cliente',
+      title: 'Nuevo Cliente',
       headerLeft: () => <HeaderBackButton onPress={() => goBackOrIfParamsOrDefault('ClienteDetail', 'Cliente')} />,
     },
   },
@@ -135,7 +136,7 @@ export const entityScreens = [
       headerLeft: () => <HeaderBackButton onPress={() => navigate('Entities')} />,
       headerRight: () => (
         <HeaderBackButton
-          label=" New "
+          label=" Nueva "
           onPress={() => navigate('CarritoEdit', { id: undefined })}
           backImage={(props) => <Ionicons name="md-add-circle-outline" size={32} color={props.tintColor} />}
         />
@@ -146,14 +147,14 @@ export const entityScreens = [
     name: 'CarritoDetail',
     route: 'carrito/detail',
     component: CarritoDetailScreen,
-    options: { title: 'View Carrito', headerLeft: () => <HeaderBackButton onPress={() => navigate('Carrito')} /> },
+    options: { title: 'Ver Carrito', headerLeft: () => <HeaderBackButton onPress={() => navigate('Carrito')} /> },
   },
   {
     name: 'CarritoEdit',
     route: 'carrito/edit',
     component: CarritoEditScreen,
     options: {
-      title: 'Edit Carrito',
+      title: 'Nuevo Carrito',
       headerLeft: () => <HeaderBackButton onPress={() => goBackOrIfParamsOrDefault('CarritoDetail', 'Carrito')} />,
     },
   },
@@ -162,11 +163,11 @@ export const entityScreens = [
     route: 'producto-orden',
     component: ProductoOrdenScreen,
     options: {
-      title: 'ProductoOrdens',
+      title: 'Ordenes de Producto',
       headerLeft: () => <HeaderBackButton onPress={() => navigate('Entities')} />,
       headerRight: () => (
         <HeaderBackButton
-          label=" New "
+          label=" Nuevo "
           onPress={() => navigate('ProductoOrdenEdit', { id: undefined })}
           backImage={(props) => <Ionicons name="md-add-circle-outline" size={32} color={props.tintColor} />}
         />
@@ -177,14 +178,14 @@ export const entityScreens = [
     name: 'ProductoOrdenDetail',
     route: 'producto-orden/detail',
     component: ProductoOrdenDetailScreen,
-    options: { title: 'View ProductoOrden', headerLeft: () => <HeaderBackButton onPress={() => navigate('ProductoOrden')} /> },
+    options: { title: 'Ver Ordenes de Producto', headerLeft: () => <HeaderBackButton onPress={() => navigate('ProductoOrden')} /> },
   },
   {
     name: 'ProductoOrdenEdit',
     route: 'producto-orden/edit',
     component: ProductoOrdenEditScreen,
     options: {
-      title: 'Edit ProductoOrden',
+      title: 'Nueva Orden de Producto',
       headerLeft: () => <HeaderBackButton onPress={() => goBackOrIfParamsOrDefault('ProductoOrdenDetail', 'ProductoOrden')} />,
     },
   },

@@ -15,7 +15,6 @@ function HomeScreen(props) {
         <View style={styles.centered}>
           <Image source={Images.logoJhipster} style={styles.logo} />
           <Text style={styles.welcomeText}>DeliveryOps</Text>
-          <Text style={styles.welcomeText}>Welcome to your JHipster React Native app.</Text>
         </View>
         {account && account.login ? (
           <View style={[styles.authContainer, styles.authContainerTrue]} testID="authDisplayTrue">
@@ -40,18 +39,19 @@ function HomeScreen(props) {
         <View style={styles.body}>
           {Platform.OS !== 'android' ? null : (
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Running on Android</Text>
+             {/*  <Text style={styles.sectionTitle}>Running on Android</Text>
               <Text style={styles.sectionDescription}>
                 Run <Text style={styles.highlight}>adb reverse tcp:8080 tcp:8080</Text> to be able to connect to your JHipster backend
                 (Android only).
               </Text>
+               */}
             </View>
           )}
           <View style={styles.sectionContainer}>
-            <Text style={styles.sectionTitle}>Make Some Changes</Text>
+            <Text style={styles.sectionTitle}>About this</Text>
             <Text style={styles.sectionDescription}>
-              Edit <Text style={styles.highlight}>app/modules/home/home-screen.js</Text> to change this screen and then come back to see
-              your edits.
+              DeliveryOps is a proof of concept Jhipster React Native App and Expo Ecosystem.
+              Access Credential: <Text style={styles.highlight}> user user</Text>.
             </Text>
           </View>
           <View style={styles.sectionContainer}>

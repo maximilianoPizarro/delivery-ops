@@ -65,7 +65,7 @@ export const drawerScreens = [
     isStack: true,
     component: EntityStackScreen,
     options: {
-      title: 'Entities',
+      title: 'Business',
       headerShown: false,
     },
     auth: true,
@@ -76,7 +76,7 @@ if (__DEV__) {
     name: 'Storybook',
     route: 'storybook',
     component: StorybookScreen,
-    auth: false,
+    auth: true,
   });
 }
 export const getDrawerRoutes = () => {
