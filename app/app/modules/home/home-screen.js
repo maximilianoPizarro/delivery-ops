@@ -50,8 +50,8 @@ function HomeScreen(props) {
           <View style={styles.sectionContainer}>
             <Text style={styles.sectionTitle}>About this</Text>
             <Text style={styles.sectionDescription}>
-              DeliveryOps is a proof of concept Jhipster React Native App and Expo Ecosystem.
-              Access Credential: <Text style={styles.highlight}> user user</Text>.
+              DeliveryOps is a proof of concept from Jhipster React Native App at Expo Ecosystem.
+              Access Credential: <Text style={styles.highlight}> user, user</Text>.
             </Text>
           </View>
           <View style={styles.sectionContainer}>

@@ -2,7 +2,7 @@
   "expo": {
     "name": "DeliveryOps",
     "slug": "DeliveryOps",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -24,7 +24,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.maximilianopizarro.DeliveryOps"
+      "package": "com.maximilianopizarro.DeliveryOps",
+      "versionCode": 3
     },
     "web": {
       "favicon": "./assets/favicon.png"
