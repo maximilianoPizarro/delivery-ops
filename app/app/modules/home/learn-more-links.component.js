@@ -29,7 +29,7 @@ const links = [
     id: 3,
     title: 'GitHub',
     link: 'https://github.com/maximilianoPizarro/delivery-ops',
-    description: 'Repository Code Project Devlivery Ops.',
+    description: 'Repository Code project Devlivery Ops.',
   },
   {
     id: 4,
@@ -48,12 +48,6 @@ const links = [
     title: 'Contact',
     link: 'http://www.linkedin.com/in/maximiliano-gregorio-pizarro-consultor-it',
     description: 'About me. Maximiliano Gregorio Pizarro',
-  },
-  {
-    id: 7,
-    title: 'Storybook',
-    link: 'https://github.com/jhipster/generator-jhipster-react-native/blob/main/docs/storybook.md',
-    description: 'How to use Storybook with React Native.',
   },
 ];
 

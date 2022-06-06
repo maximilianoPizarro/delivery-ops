@@ -3,6 +3,8 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 tasks:
+  - init: npm install -g expo-cli && npm install --global eas-cli
+    command: cd backend
   - init: cd backend && npm install
     command: ./mvnw
   - init: cd app && npm install
